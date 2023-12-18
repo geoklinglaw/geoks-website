@@ -1,75 +1,14 @@
 " use client";
 
-// import React, { useRef, useEffect } from 'react';
-// import * as THREE from 'three';
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-// import '../styles/globe.css'; // Make sure the path to your CSS is correct
-
-// function Globe() {
-//     const containerRef = useRef();
-
-//     useEffect(() => {
-//         // Scene setup
-//         const scene = new THREE.Scene();
-
-//         // Camera setup
-//         const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000);
-//         camera.position.set(1380, -17, 394);
-
-//         // Renderer setup
-//         const renderer = new THREE.WebGLRenderer({ antialias: true });
-//         renderer.setSize(window.innerWidth, window.innerHeight);
-//         containerRef.current.appendChild(renderer.domElement);
-
-//         // Light setup
-//         const light = new THREE.SpotLight(0xFFFFFF, 1);
-//         light.position.set(4000, 4000, 1500);
-//         scene.add(light);
-
-//         // Earth geometry and material
-//         const earthGeometry = new THREE.SphereGeometry(200, 400, 400);
-//         const earthMaterial = new THREE.MeshPhongMaterial({
-//             map: new THREE.TextureLoader().load('earthmap.jpg'), // Replace with your texture path
-//             bumpMap: new THREE.TextureLoader().load('bump-map.jpg'), // Replace with your texture path
-//             bumpScale: 8,
-//             specularMap: new THREE.TextureLoader().load('earthspec1k.jpg'), // Replace with your texture path
-//             specular: new THREE.Color('#2e2e2e')
-//         });
-//         const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
-//         earthMesh.position.set(-100, 0, 0);
-//         earthMesh.rotation.y = 5;
-//         scene.add(earthMesh);
-
-//         // Controls setup
-//         const controls = new OrbitControls(camera, renderer.domElement);
-//         controls.addEventListener('change', () => renderer.render(scene, camera));
-
-//         // Animation loop
-//         function animate() {
-//             requestAnimationFrame(animate);
-//             controls.update();
-//             renderer.render(scene, camera);
-//         }
-
-//         animate();
-
-//         // Clean up
-//         return () => {
-//             containerRef.current.removeChild(renderer.domElement);
-//         };
-//     }, []);
-
-//     return <div ref={containerRef} style={{ width: '100%', height: '100vh' }} />;
-// }
-
-// export default Globe;
-
+import { useLoader } from '@react-three/fiber';
+import { TextureLoader } from 'three';
 import React, { useRef, useEffect } from 'react';
 import {OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
 // import scene from '../../public/models/planet_earth/scene.gltf';
 import UseAnimations from "react-useanimations";
 
 function Globe(props) {
+
     const group = useRef()
     const { nodes, materials, animations } = useGLTF('/models/planet_earth/scene.gltf');
     const { actions } = useAnimations(animations, group)
@@ -106,7 +45,7 @@ function Globe(props) {
                     </group>
                     <mesh name="Earth_Ice_0" geometry={nodes.Earth_Ice_0.geometry} material={materials.material} /> 
                     <mesh name="Earth_Water_0" geometry={nodes.Earth_Water_0.geometry} material={materials.Water} />
-                    <mesh name="Earth_Sand_0" geometry={nodes.Earth_Sand_0.geometry} material={materials.Sand} />
+                    <mesh name="Earth_Sand_0" geometry={nodes.Earth_Sand_0.geometry} material={materials.Sand} material-color={"#FBA312"}/>
                     <mesh name="Earth_Grass_0" geometry={nodes.Earth_Grass_0.geometry} material={materials.Grass}  />
                     {/* material-color={"#FFFFFF"} */}
                   </group>
@@ -119,5 +58,32 @@ function Globe(props) {
     )
 }
 
-
 export default Globe;
+
+// import { useLoader } from '@react-three/fiber';
+// import { TextureLoader } from 'three';
+// import React, { useRef, useEffect } from 'react';
+// import {OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
+// // import scene from '../../public/models/planet_earth/scene.gltf';
+// import UseAnimations from "react-useanimations";
+
+
+// function Globe(props) {
+//   const { nodes, materials } = useGLTF('/models/earth/scene.gltf');
+//   const blinn1BaseColor = useLoader(TextureLoader, '/models/earth/textures/blinn1_baseColor.png');
+//   const blinn1MetallicRoughness = useLoader(TextureLoader, '/models/earth/textures/blinn1_metallicRoughness.png');
+
+//   materials.blinn1.map = blinn1BaseColor;
+//   materials.blinn1.metallicRoughnessMap = blinn1MetallicRoughness;
+
+//   return (
+//         <group {...props} dispose={null}>
+//         <mesh geometry={nodes.earth4_blinn1_0.geometry} material={materials.blinn1} />
+//         <mesh geometry={nodes.earth4_lambert1_0.geometry} material={materials.lambert1} />
+//         </group>
+//   );
+// }
+
+// export default Globe;
+
+

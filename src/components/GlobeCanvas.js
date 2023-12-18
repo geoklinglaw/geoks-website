@@ -35,14 +35,30 @@ function CameraSetup() {
 function GlobeCanvas() {
     return (
         <>
-            <Canvas>
+            <Canvas shadows> 
                 <Suspense fallback={null}>
                     <CameraSetup />
+                    <directionalLight
+                        position={[1, 0, 0]} 
+                        intensity={1}        
+                        castShadow           
+                    />
+                    <directionalLight
+                        position={[-1, 0, 0]} 
+                        intensity={1}         
+                        castShadow            
+                    />
+                    <directionalLight
+                        position={[0, 1, 0]} 
+                        intensity={1}         
+                        castShadow
+                    />
                     <ambientLight 
-                        intensity={2.5}
-                        setRotationFromAxisAngle={0.7}
-                        penumbra={1}
-                        position={[10, 15, 10]}
+                        intensity={2}
+
+                        // setRotationFromAxisAngle={0.7}
+                        // penumbra={1}
+                        // position={[10, 15, 10]}
                         castShadow={true}
                     />
                     <Globe/>

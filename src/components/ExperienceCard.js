@@ -31,16 +31,6 @@ function ExperienceSection() {
         },
     };
 
-
-    // const logoAnimation2 = {
-    //     hidden: { opacity: 0, y: -5 }, // Start from slightly above and faded out
-    //     visible: {
-    //       opacity: 1,
-    //       y: 0,
-    //       transition: { delay: 1.2, duration: 0.4, ease: "linear" }, // Delay this more than the line
-    //     },
-    // };
-
     const textAnimation1 = {
         hidden: { opacity: 0, y: -5 }, 
         visible: {
@@ -55,19 +45,9 @@ function ExperienceSection() {
         visible: {
           opacity: 1,
           y: 0,
-          transition: { delay: 1, duration: 0.5, ease: "linear" }, 
+          transition: { delay: 0.75, duration: 0.5, ease: "linear" }, 
         },
     };
-
-    // const textAnimation2 = {
-    //     hidden: { opacity: 0, y: 0 }, 
-    //     visible: {
-    //       opacity: 1,
-    //       y: 0,
-    //       transition: { delay: 1.2, duration: 0.3, ease: "linear" }, 
-    //     },
-    // };
-
 
   return (
     <>

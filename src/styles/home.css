@@ -491,7 +491,7 @@ pointer-events: none;
 .globe-container {
     position: absolute; 
     width: 80rem;
-    left: 8rem;
+    left: 13rem;
     height: 80rem;
     z-index: 9999; 
 
