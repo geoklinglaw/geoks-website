@@ -1,5 +1,5 @@
 "use client";
-import { React, useRef, useState, useEffect } from "react";
+import { React, useRef, useState, useEffect, Suspense } from "react";
 // import image from "../../public/images/png2.png";
 import Header from "../components/Header";
 import ExperienceCard from "../components/ExperienceCard";
@@ -8,7 +8,7 @@ import theme from "../components/theme";
 import StarsCanvas from "@/components/starbackground";
 import ScrollToTop from "@/components/scrollToTop";
 import ContactForm from "@/components/ContactForm";
-// import Globe from "@/components/Globe";
+import GlobeCanvas from "@/components/GlobeCanvas";
 // import profile from "../../public/images/profile.jpg";
 import '../styles/home.css';
 import '../styles/header.css';
@@ -29,6 +29,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { HStack } from '@chakra-ui/react';
 import Image from 'next/image';
+import { Canvas } from '@react-three/fiber';
 
 
 
@@ -300,6 +301,7 @@ function Home() {
                     </div>
 
                     <div className="container-space"/>
+                    <div className="container-space"/>
 
                     <div>
                         <motion.div className="container" initial="hidden" animate="show">
@@ -313,8 +315,20 @@ function Home() {
                             >
                                 
                                 <SectionWithStars showStars={true} /> 
-                                <ContactForm/>
-                                {/* <Globe/> */}
+                                {/* <HStack> */}
+                                <div className="contact-form-container">
+                                    <ContactForm/>
+                                </div>
+
+                                    <div className="globe-container">
+                                        <GlobeCanvas/>
+
+                                    </div>
+                                {/* </HStack> */}
+
+
+
+
                             </motion.section>
                         </section>
                         </motion.div>

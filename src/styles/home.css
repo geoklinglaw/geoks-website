@@ -453,8 +453,8 @@
 }
 
 .contact-form {
-    position: relative; /* or absolute, depending on your layout */
-    z-index: 10000; /* higher than the WebGL canvas */
+    position: relative; 
+    z-index: 10000; 
 }
   
 .w-full.h-full.absolute {
@@ -470,4 +470,29 @@ pointer-events: none;
     font-size: 23px;
     margin-top: 1.3rem;
     margin-right: 1.2rem;
+}
+
+
+.section-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+  
+
+.contact-form-container {
+    z-index: 10000; 
+    position: relative; 
+    right: 16rem;
+}
+
+.globe-container {
+    position: absolute; 
+    width: 80rem;
+    left: 8rem;
+    height: 80rem;
+    z-index: 9999; 
+
 }

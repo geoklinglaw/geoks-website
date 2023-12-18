@@ -8,29 +8,30 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import { useInView } from 'react-intersection-observer';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { IconButton } from '@chakra-ui/react'
+import Image from 'next/image.js';
 
 
 function ProjectCard() {
 
     const slides1 = [
-        "images/growthhub/landing.png",
+        "/images/growthhub/landing.png",
         // "images/growthhub/userprofile.png",
-        "images/growthhub/events.png",
-        "images/growthhub/feed.png",
-        "images/growthhub/post.png",
+        "/images/growthhub/events.png",
+        "/images/growthhub/feed.png",
+        "/images/growthhub/post.png",
     ]
     
 
     const slides2 = [
-        "images/trippinout/landing.png",
-        "images/trippinout/preferences.png",
-        "images/trippinout/locations.png",
-        "images/trippinout/dining.png",
-        "images/trippinout/itinerary.png",
+        "/images/trippinout/landing.png",
+        "/images/trippinout/preferences.png",
+        "/images/trippinout/locations.png",
+        "/images/trippinout/dining.png",
+        "/images/trippinout/itinerary.png",
     ]
 
     const slides3 = [
-        "images/budgetbot/:past.png",
+        "/images/budgetbot/:past.png",
     ]
 
 
@@ -70,7 +71,14 @@ function ProjectCard() {
                                 <div className='project-img img'>
                                 <Carousel autoSlide={false}>
                                     {slides1.map((slide) => (
-                                        <img key={slide} src={slide} alt="Project Image" />
+                                        <Image 
+                                        key={slide} 
+                                        src={slide} 
+                                        alt="Project Image"
+                                        width={1700}
+                                        height={1000} 
+                                        />
+                                        // <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
                                 </div>
@@ -102,7 +110,14 @@ function ProjectCard() {
                             <VStack>
                                 <Carousel autoSlide={false}>
                                     {slides2.map((slide) => (
-                                        <img key={slide} src={slide} alt="Project Image" />
+                                        <Image 
+                                        key={slide} 
+                                        src={slide} 
+                                        alt="Project Image"
+                                        width={1700}
+                                        height={1000} 
+                                        />
+                                        // <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
                                 <Flex>
@@ -131,7 +146,14 @@ function ProjectCard() {
                             <VStack>
                                 <Carousel autoSlide={false}>
                                     {slides3.map((slide) => (
-                                        <img key={slide} src={slide} alt="Project Image" />
+                                        <Image 
+                                            key={slide} 
+                                            src={slide} 
+                                            alt="Project Image"
+                                            width={1700}
+                                            height={1000} 
+                                        />
+                                        // <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
                                 <Flex>
