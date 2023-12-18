@@ -1,0 +1,468 @@
+
+.main {
+    overflow-y: hidden;
+}
+
+.container {
+    scroll-snap-type: y proximity;
+    height: 100vh;
+    /* overflow-y: scroll; */
+}
+.hero {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+* {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 16px;
+    z-index: 10000; 
+    pointer-events: none;
+    filter: blur(10px);
+    background-color: #FCA311;
+}
+
+
+
+.codeHeader {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: azure;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    border-right: 0.1em solid azure;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    animation:
+        typing 3s steps(31) forwards, 
+        cursor 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+    from { width: 0%; }
+    to { width: 33.8ch; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+.hero-container {
+    padding-top: 20px;
+}
+
+.hero-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) { /* 'md:' in Tailwind refers to screen sizes 768px and larger */
+    .hero-div {
+        max-width: 768px; /* This value can be adjusted based on your design requirements */
+    }
+}
+
+
+.header2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: azure;
+}
+
+
+
+.header3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    color: azure;
+    margin-bottom: -2px;
+}
+
+.lets-talk-btn {
+    margin-top: 2rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 0.8rem;
+    font-weight: 550; 
+    color: #04052E;
+    background-image: linear-gradient(30deg, #00C6C3, #00C6C3, #54E0FF); 
+    border: none;
+    border-radius: 3rem; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+  
+.lets-talk-btn:hover {
+    background-image: linear-gradient(30deg, #02aa8c, #02aa8c, #43b3cc); 
+}
+
+.icons {
+    color: azure;
+    height: 17px;
+    margin-top: 1.5rem;
+    margin-right: 1.2rem;
+    
+}
+
+.icons:hover {
+    color: #00C6C3;
+    position: relative;
+    top: -1px;
+
+}
+
+.header4 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #00C6C3;
+}
+  
+.container-space {
+    padding-top: 3rem;
+}
+
+.intro {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.15rem;
+    line-height: 1.4;
+    text-align: left;
+    color: azure;
+}
+
+.skills-text {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 3.5rem;
+    margin-bottom: -0.3rem;
+    text-align: left;
+    color: #00C6C3;
+    text-align: left;
+}
+
+
+.skills-gap {
+    padding-right: 6rem;
+}
+
+.skills-large-btn1 {
+    margin-top: 1.2rem;
+    margin-right: 1.3rem;
+    padding: 0.6rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 550; 
+    color: #00C6C3; 
+    background-image: linear-gradient(40deg, rgba(2, 122, 101, 0.58), rgba(4, 5, 46, 0.90)); 
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    box-shadow: 0.5px 1px 1px 2px rgba(2, 122, 101, 0.15);
+    animation: float 7s ease-in-out infinite;
+}
+
+.skills-large-btn2 {
+    margin-top: 1.4rem;
+    margin-right: 1rem;
+    padding: 0.6rem 2.1rem;
+    font-size: 0.9rem;
+    font-weight: 550; 
+    color: #00C6C3; 
+    background-image: linear-gradient(40deg, rgba(2, 122, 101, 0.58), rgba(4, 5, 46, 0.90)); 
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    box-shadow: 0.5px 1px 1px 2px rgba(2, 122, 101, 0.15);
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+
+.profile-img {
+    justify-content: right;
+    padding-right: 4.5rem;
+}
+
+.header5 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #00C6C3;
+    /* margin-top: 8rem; */
+    margin-bottom: 3.25rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.line {
+    width: 50%;
+    height: 3px;
+    background-color: #00C6C3;
+    margin-bottom: 2rem;
+    margin-left: 20px;
+}
+
+.role {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+    color: azure;
+    text-align: left;
+}
+
+.company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: -5px;
+    line-height: 1.4;
+    text-align: left;
+    color: #00C6C3;
+}
+
+.date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: left;
+    color: azure;
+    margin-top: -6px;
+}
+
+.job-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.15rem;
+    line-height: 1.4;
+    text-align: left;
+    color: azure;
+}
+
+.job-container {
+    width: 82%;
+    align-items: flex-start;
+    margin: 0 auto auto auto;
+    padding: 0 100px 0 130px;
+    position: absolute;
+    top: 10px;
+}
+
+
+
+.job-container2 {
+    margin-top: 20rem;
+}
+
+/* .job-container::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 5px;
+    border-left: #FFFFFF solid 4px;
+    animation: moveline 10s linear forwards;
+} */
+
+
+.timeline-line {
+    position: absolute;
+    left: calc(16% - 3px);
+    top: 50px; /* Start after the logo's height */
+
+    bottom: 0;
+    width: 4px; /* Line thickness */
+    background-color: #FFFFFF; /* Line color */
+    transform-origin: top; /* Ensures scaling happens top-down */
+}
+  
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem;
+    
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+
+.projectCard-container {
+    height: 400px;
+    width: 500px;
+    background-color: #202145;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-right: 1rem; 
+    margin-left: 1rem; 
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+
+.carousel-arrow {
+    position: fixed; 
+    top: 50vh;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.project-img {
+    width: 100%;
+}
+
+
+.projectCard-layout {
+    width: 100%;
+}
+
+.project-header {
+    margin-top: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.project-desc {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: left;
+    margin-top: -7px;
+}
+
+.skills-large-btn3 {
+    padding: 0.2rem 1rem;
+    font-size: 0.65rem;
+    font-weight: 550; 
+    color: #00C6C3; 
+    margin-top: -5px;
+}
+
+
+.form-header {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #FCA311;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.form-container1 {
+    padding: 1rem 1rem;
+    background-color: '#FFFFFF';
+    opacity: 0.8;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: flex-start;
+    height: 2rem;
+    width: 20rem;
+}
+
+.form-container2 {
+    padding: 1rem 1rem;
+    background-color: '#FFFFFF';
+    opacity: 0.8;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 20rem;
+}
+
+.form-send-text{
+    font-size: 0.8rem;
+    font-weight: 450;
+    color: #04052E;
+    letter-spacing: 0.5px;
+    text-align: left;
+    position: relative;
+    
+}
+
+.form-send-btn {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #FCA311;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.4rem 1rem; 
+    border-radius: 4px;
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+}
+
+.form-send-btn:hover {
+    background-color: #e38e03;
+}
+
+.contact-form {
+    position: relative; /* or absolute, depending on your layout */
+    z-index: 10000; /* higher than the WebGL canvas */
+}
+  
+.w-full.h-full.absolute {
+pointer-events: none;
+}
+  
+.icons-container {
+    padding-left: 1.5rem;
+}
+
+.icons1 {
+    color: #FCA311;
+    font-size: 23px;
+    margin-top: 1.3rem;
+    margin-right: 1.2rem;
+}

@@ -1,0 +1,52 @@
+.headerText {
+    color: azure;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0.2rem;
+    margin-left: 2.5rem;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    display: inline-block; 
+}
+
+.headerText::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    color: #FCA311;
+    box-sizing: border-box; 
+    -webkit-transition: width 0.5s linear;
+    transition: width 0.5s linear;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.headerText:hover::after {
+    width: 100%;
+}
+
+.headerText:hover {
+    color: transparent; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns children (navbar) to the right */
+}
+
+.navbar {
+    display: flex;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}

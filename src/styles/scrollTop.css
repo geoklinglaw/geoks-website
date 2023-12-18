@@ -1,0 +1,14 @@
+.top-btn-position {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+  }
+  
+  .top-btn-style {
+    padding: 10px; 
+    background-color: #fff; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
