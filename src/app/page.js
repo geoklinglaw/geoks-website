@@ -8,7 +8,7 @@ import theme from "../components/theme";
 import StarsCanvas from "@/components/starbackground";
 import ScrollToTop from "@/components/scrollToTop";
 import ContactForm from "@/components/ContactForm";
-import Globe from "@/components/Globe";
+// import Globe from "@/components/Globe";
 // import profile from "../../public/images/profile.jpg";
 import '../styles/home.css';
 import '../styles/header.css';
@@ -206,7 +206,6 @@ function Home() {
                                         alt="landingpage"
                                         width={500}
                                         height={300}
-                                        layout="responsive"
                                         className="object-scale-down max-w-lg ml-8"
                                     />
                                 </motion.div>
@@ -242,7 +241,6 @@ function Home() {
                                     alt="landingpage"
                                     width={256} 
                                     height={200} 
-                                    layout="responsive"
                                     className="ml-20 object-scale-down max-w-[16rem]"
                                 />
                                     {/* <Image className="ml-20 object-scale-down max-w-[16rem]" src={'/images/profile.jpg'} alt="profile"/> */}

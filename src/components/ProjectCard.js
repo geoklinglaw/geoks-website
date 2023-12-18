@@ -8,30 +8,29 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import { useInView } from 'react-intersection-observer';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { IconButton } from '@chakra-ui/react'
-import Image from 'next/image';
 
 
 function ProjectCard() {
 
     const slides1 = [
-        "/images/growthhub/landing.png",
+        "images/growthhub/landing.png",
         // "images/growthhub/userprofile.png",
-        "/images/growthhub/events.png",
-        "/images/growthhub/feed.png",
-        "/images/growthhub/post.png",
+        "images/growthhub/events.png",
+        "images/growthhub/feed.png",
+        "images/growthhub/post.png",
     ]
     
 
     const slides2 = [
-        "/images/trippinout/landing.png",
-        "/images/trippinout/preferences.png",
-        "/images/trippinout/locations.png",
-        "/images/trippinout/dining.png",
-        "/images/trippinout/itinerary.png",
+        "images/trippinout/landing.png",
+        "images/trippinout/preferences.png",
+        "images/trippinout/locations.png",
+        "images/trippinout/dining.png",
+        "images/trippinout/itinerary.png",
     ]
 
     const slides3 = [
-        "/images/budgetbot/:past.png",
+        "images/budgetbot/:past.png",
     ]
 
 
@@ -69,16 +68,9 @@ function ProjectCard() {
                         <Box className='projectCard-container'>
                             <VStack>
                                 <div className='project-img img'>
-                                <Carousel>
+                                <Carousel autoSlide={false}>
                                     {slides1.map((slide) => (
-                                        <Image
-                                            key={slide}
-                                            src={slide}
-                                            alt="landingpage"
-                                            width={500} // Replace with the actual width of your image
-                                            height={300} // Replace with the actual height of your image
-                                            layout="responsive"
-                                    />
+                                        <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
                                 </div>
@@ -108,16 +100,9 @@ function ProjectCard() {
                     >
                         <Box className='projectCard-container'>
                             <VStack>
-                                <Carousel>
+                                <Carousel autoSlide={false}>
                                     {slides2.map((slide) => (
-                                        <Image
-                                            key={slide}
-                                            src={slide}
-                                            alt="landingpage"
-                                            width={500} // Replace with the actual width of your image
-                                            height={300} // Replace with the actual height of your image
-                                            layout="responsive"
-                                        />
+                                        <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
                                 <Flex>
@@ -144,16 +129,9 @@ function ProjectCard() {
                     >
                         <Box className='projectCard-container'>
                             <VStack>
-                                <Carousel>
+                                <Carousel autoSlide={false}>
                                     {slides3.map((slide) => (
-                                        <Image
-                                            key={slide}
-                                            src={slide}
-                                            alt="landingpage"
-                                            width={500} // Replace with the actual width of your image
-                                            height={300} // Replace with the actual height of your image
-                                            layout="responsive"
-                                    />
+                                        <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
                                 <Flex>
