@@ -28,6 +28,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { HStack } from '@chakra-ui/react';
+import Image from 'next/image';
+
 
 
 
@@ -199,7 +201,14 @@ function Home() {
                                     whileInView={'show'}
                                     viewport={{once: false, amount: 0.7}}
                                     className="justify-end">
-                                    <img className="object-scale-down max-w-lg ml-8" src={'/images/landingpage.png'} alt="landingpage"></img>
+                                    <Image
+                                        src="/images/landingpage.png"
+                                        alt="landingpage"
+                                        width={500}
+                                        height={300}
+                                        layout="responsive"
+                                        className="object-scale-down max-w-lg ml-8"
+                                    />
                                 </motion.div>
                             </div> 
                         </div>
@@ -228,7 +237,15 @@ function Home() {
                                     </p>
                                 </div>
                                 <div className="basis-1/2 flex profile-img"> 
-                                    <img className="ml-20 object-scale-down max-w-[16rem]" src={'/images/profile.jpg'} alt="profile"/>
+                                <Image
+                                    src="/images/profile.jpg"
+                                    alt="landingpage"
+                                    width={256} 
+                                    height={200} 
+                                    layout="responsive"
+                                    className="ml-20 object-scale-down max-w-[16rem]"
+                                />
+                                    {/* <Image className="ml-20 object-scale-down max-w-[16rem]" src={'/images/profile.jpg'} alt="profile"/> */}
                                 </div>
                             </div>
  
