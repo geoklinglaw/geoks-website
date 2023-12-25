@@ -1,0 +1,11 @@
+Model Information:
+* title:	UFO
+* source:	https://sketchfab.com/3d-models/ufo-073c8a70d9434e439a42d9e519340c0b
+* author:	valencia3dartist (https://sketchfab.com/Sebastian.Valencia.Valencia)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "UFO" (https://sketchfab.com/3d-models/ufo-073c8a70d9434e439a42d9e519340c0b) by valencia3dartist (https://sketchfab.com/Sebastian.Valencia.Valencia) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

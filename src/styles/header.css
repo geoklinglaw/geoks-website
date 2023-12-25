@@ -1,11 +1,11 @@
 .headerText {
     color: azure;
-    font-size: 0.75rem;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.85rem;
     font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 0.2rem;
+    margin-top: 20px;
     margin-left: 2.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     position: relative;
     overflow: hidden;
     cursor: pointer;

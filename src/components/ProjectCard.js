@@ -8,6 +8,7 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import { useInView } from 'react-intersection-observer';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { IconButton } from '@chakra-ui/react'
+import { AdobeFonts } from 'react-adobe-fonts';
 import Image from 'next/image.js';
 
 
@@ -33,7 +34,6 @@ function ProjectCard() {
     const slides3 = [
         "/images/budgetbot/:past.png",
     ]
-
 
     const controls = useAnimation();
     const [ref, inView] = useInView({
@@ -94,7 +94,7 @@ function ProjectCard() {
                                     </Flex>
                                 </HStack>
                                 
-                                <p className='project-desc'> In collaboration with GrowthCollectiveSG, GrowthHub serves as a social platform designed to nurture mental wellness through events, community engagement, and supportive social groups. </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> In collaboration with GrowthCollectiveSG, GrowthHub serves as a social platform designed to nurture mental wellness through events, community engagement, and supportive social groups. </p>
                             </VStack>
                         </Box>
                     </motion.div>
@@ -129,7 +129,7 @@ function ProjectCard() {
                                         icon={<ExternalLinkIcon />}
                                     />
                                 </Flex>
-                                <p className='project-desc'> This project offers a tailored travel planning experience, creating customized itineraries based on users' preferences with destinations and dining selections. </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> This project offers a tailored travel planning experience, creating customized itineraries based on users' preferences with destinations and dining selections. </p>
                             </VStack>
                         </Box>
                     </motion.div>
@@ -140,7 +140,7 @@ function ProjectCard() {
                         animate={controls}
                         initial="hidden"
                         variants={variants}
-                        transition={{ delay: 0.25, duration: 0.4, ease: "linear"}}
+                        transition={{ delay: 0.25, duration: 0.6, ease: "linear"}}
                     >
                         <Box className='projectCard-container'>
                             <VStack>
@@ -165,7 +165,7 @@ function ProjectCard() {
                                         icon={<ExternalLinkIcon />}
                                     />
                                 </Flex>
-                                <p className='project-desc'> User-friendly Telegram bot designed to simplify expense tracking with Google Sheets. It efficiently categorizes expenses, manages one-time and recurring transactions, and allows for easy modification of past entries. </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> Telegram bot designed to simplify expense tracking with Google Sheets. It efficiently categorizes expenses, manages one-time and recurring transactions, and allows for easy modification of past entries. </p>
                             </VStack>
                         </Box>
                     </motion.div>

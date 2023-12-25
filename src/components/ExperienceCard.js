@@ -2,8 +2,15 @@
 
 import { Flex, Box, Text, VStack, Heading, HStack, Icon } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { AdobeFonts } from 'react-adobe-fonts';
+
 
 function ExperienceSection() {
+
+    const [ref, inView] = useInView({
+        triggerOnce: false
+    });
 
     const lineAnimation = {
         hidden: { scaleY: 0 }, 
@@ -27,7 +34,7 @@ function ExperienceSection() {
         visible: {
           opacity: 1,
           y: 0,
-          transition: { delay: 0.55, duration: 0.2, ease: "linear" }, // Delay this more than the line
+          transition: { delay: 0.35, duration: 0.2, ease: "linear" }, // Delay this more than the line
         },
     };
 
@@ -45,7 +52,7 @@ function ExperienceSection() {
         visible: {
           opacity: 1,
           y: 0,
-          transition: { delay: 0.75, duration: 0.5, ease: "linear" }, 
+          transition: { delay: 0.5, duration: 0.5, ease: "linear" }, 
         },
     };
 
@@ -57,7 +64,8 @@ function ExperienceSection() {
                 variants={lineAnimation}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.8 }} // This will trigger the animation when 80% of the line is in the viewport
+                animate={inView ? "visible" : "hidden"}
+                // viewport={{ once: true, amount: 0.8 }}
             />
             <div className="animated-border">
             
@@ -71,18 +79,19 @@ function ExperienceSection() {
                             variants={logoAnimation1}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.8 }} 
+                            animate={inView ? "visible" : "hidden"}
+                            // viewport={{ once: true, amount: 0.8 }} 
                         />
                         <motion.div
                             variants={textAnimation1}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.8 }} 
+                            // viewport={{ once: true, amount: 0.8 }} 
                         >
                             <VStack align="start" style={{alignItems:'flex-start'}}>
                                 <HStack>
                                     <p className="role">Software Engineer Intern</p>
-                                    <p className="company">@Autodesk</p>
+                                    <p style={{ fontFamily: 'Colfax, sans-serif' }} className="company">@Autodesk</p>
                                 </HStack>
                                 <p className="date">Jan 2024 - June 2024</p>
                             </VStack>
@@ -98,23 +107,25 @@ function ExperienceSection() {
                                 variants={logoAnimation2}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: true, amount: 0.8 }} 
+                                animate={inView ? "visible" : "hidden"}
+                                // viewport={{ once: true, amount: 0.8 }} 
                             />
                             
                             <motion.div
-                            variants={textAnimation2}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.8 }} 
+                                variants={textAnimation2}
+                                initial="hidden"
+                                whileInView="visible"
+                                animate={inView ? "visible" : "hidden"}
+                                // viewport={{ once: true, amount: 0.8 }} 
                             >
                                 <VStack align="start" style={{alignItems:'flex-start'}}>
                                     <HStack>
                                         <p className="role" size='md'>Software Developer Intern</p>
-                                        <p className="company" >@Home Team Science And Technology Agency</p>
+                                        <p className="company" >@Home Team (HTX)</p>
                                     </HStack>
                                     <p className="date">May 2023 - Aug 2023</p>
 
-                                    <p className="job-description">
+                                    <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description">
                                         Improved web scraping system using Python (Selenium, BeautifulSoup), ensuring
                                         reliable and consistent data extraction from social media platforms like Instagram,
                                         Facebook, TikTok, and Twitter.

@@ -1,6 +1,6 @@
 import { useThree } from '@react-three/fiber';
 import { useEffect } from 'react';
-import Globe from "@/components/Globe";
+import Ufo from "@/components/Ufo";
 import { OrbitControls, ambientLight } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react'; 
@@ -11,10 +11,10 @@ function CameraSetup() {
     const { camera, size } = useThree();
   
     useEffect(() => {
-      camera.position.set(100, 70, 50); 
+      camera.position.set(100, 0, 0); 
       camera.lookAt(0, 0, 0); 
-      camera.fov = 10; 
       camera.aspect = size.width / size.height;
+      camera.far = 10000000;
       camera.updateProjectionMatrix();
   
     }, [camera, size.width, size.height]);
@@ -25,35 +25,36 @@ function CameraSetup() {
 
 
 
-function GlobeCanvas() {
+function UfoCanvas() {
     return (
         <>
-            <Canvas> 
+            <Canvas shadows> 
                 <Suspense fallback={null}>
-                    <CameraSetup />
+                    {/* <CameraSetup /> */}
                     <directionalLight
-                        position={[1, 0, 0]} 
+                        position={[-1, -1, 0]} 
                         intensity={1}        
                         castShadow           
                     />
                     <directionalLight
-                        position={[-1, 0, 0]} 
+                        position={[1, 1, 0]} 
                         intensity={1}         
                         castShadow            
                     />
                     <directionalLight
                         position={[0, 1, 0]} 
-                        intensity={1}         
+                        intensity={1.5}         
                         castShadow
                     />
                     <ambientLight 
-                        intensity={2}
+                        intensity={1}
                     />
-                    <Globe/>
+                    <Ufo/>
                     <OrbitControls 
                         enablePan={true} 
                         enableZoom={false}
-                        enableRotate={true}
+                        enableRotate={false}
+                        enalbleDamping={false}
                     />
                 </Suspense>
             </Canvas>
@@ -62,4 +63,4 @@ function GlobeCanvas() {
     )
 }
 
-export default GlobeCanvas;
+export default UfoCanvas;

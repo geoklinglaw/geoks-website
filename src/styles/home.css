@@ -11,6 +11,7 @@
 .hero {
     height: 100vh;
     scroll-snap-align: start;
+    padding-bottom: 1rem;
 }
 
 * {
@@ -27,7 +28,7 @@
     z-index: 10000; 
     pointer-events: none;
     filter: blur(10px);
-    background-color: #FCA311;
+    background-color: #F3A738;
 }
 
 
@@ -36,20 +37,20 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 2rem;
     font-weight: 700;
-    color: azure;
+    color: #FFFFFF;
     margin: 0 auto;
     letter-spacing: .05em;
-    border-right: 0.1em solid azure;
+    border-right: 0.1em solid #FFFFFF;
     white-space: nowrap;
     overflow: hidden;
     width: auto;
     animation:
-        typing 3s steps(31) forwards, 
+        typing 3s steps(22) forwards, 
         cursor 0.5s step-end infinite alternate;
 }
 @keyframes typing {
     from { width: 0%; }
-    to { width: 33.8ch; }
+    to { width: 24ch; }
 }
 
 @keyframes cursor {
@@ -99,7 +100,7 @@
     font-size: 0.8rem;
     font-weight: 550; 
     color: #04052E;
-    background-image: linear-gradient(30deg, #00C6C3, #00C6C3, #54E0FF); 
+    background-image: linear-gradient(30deg, #00BD9D, #00BD9D, #54E0FF); 
     border: none;
     border-radius: 3rem; 
     cursor: pointer;
@@ -119,21 +120,25 @@
 }
 
 .icons:hover {
-    color: #00C6C3;
+    color: #F3A738;
     position: relative;
     top: -1px;
 
 }
 
 .header4 {
-    font-size: 2.2rem;
+    margin-top: 1rem;
+    font-size: 1.9rem;
     font-weight: 700;
-    color: #00C6C3;
+    color: #F3A738;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
 }
   
 .container-space {
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
+
 
 .intro {
     font-size: 1rem;
@@ -144,63 +149,31 @@
     color: azure;
 }
 
+.skill-container {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
 .skills-text {
     font-size: 1rem;
-    letter-spacing: 4px;
+    font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    margin-top: 3.5rem;
-    margin-bottom: -0.3rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0.2rem;
+    padding-right: 30px;
     text-align: left;
-    color: #00C6C3;
+    color: #F3A738;
+}
+
+.skills-list {
     text-align: left;
+    font-size: 1rem;
+    line-height: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
 }
 
-
-.skills-gap {
-    padding-right: 6rem;
-}
-
-.skills-large-btn1 {
-    margin-top: 1.2rem;
-    margin-right: 1.3rem;
-    padding: 0.6rem 2.5rem;
-    font-size: 0.9rem;
-    font-weight: 550; 
-    color: #00C6C3; 
-    background-image: linear-gradient(40deg, rgba(2, 122, 101, 0.58), rgba(4, 5, 46, 0.90)); 
-    border: none;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    box-shadow: 0.5px 1px 1px 2px rgba(2, 122, 101, 0.15);
-    animation: float 7s ease-in-out infinite;
-}
-
-.skills-large-btn2 {
-    margin-top: 1.4rem;
-    margin-right: 1rem;
-    padding: 0.6rem 2.1rem;
-    font-size: 0.9rem;
-    font-weight: 550; 
-    color: #00C6C3; 
-    background-image: linear-gradient(40deg, rgba(2, 122, 101, 0.58), rgba(4, 5, 46, 0.90)); 
-    border: none;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    box-shadow: 0.5px 1px 1px 2px rgba(2, 122, 101, 0.15);
-    animation: float 7s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-6px);
-    }
-  }
-  
 
 .profile-img {
     justify-content: right;
@@ -208,10 +181,11 @@
 }
 
 .header5 {
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-weight: 700;
-    color: #00C6C3;
+    color: #F3A738;
     /* margin-top: 8rem; */
+    font-family: 'Source Code Pro', monospace;
     margin-bottom: 3.25rem;
     letter-spacing: 2px;
     text-align: center;
@@ -219,8 +193,8 @@
 
 .line {
     width: 50%;
-    height: 3px;
-    background-color: #00C6C3;
+    border: #F3A738 solid 2px;
+    background-color: #F3A738;
     margin-bottom: 2rem;
     margin-left: 20px;
 }
@@ -232,15 +206,17 @@
     text-align: left;
     color: azure;
     text-align: left;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .company {
     font-size: 0.9rem;
+    font-family: 'Source Code Pro', monospace;
     font-weight: 600;
     margin-bottom: -5px;
     line-height: 1.4;
     text-align: left;
-    color: #00C6C3;
+    color: #F3A738;
 }
 
 .date {
@@ -249,6 +225,7 @@
     text-align: left;
     color: azure;
     margin-top: -6px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .job-description {
@@ -267,6 +244,7 @@
     padding: 0 100px 0 130px;
     position: absolute;
     top: 10px;
+    
 }
 
 
@@ -274,17 +252,6 @@
 .job-container2 {
     margin-top: 20rem;
 }
-
-/* .job-container::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    top: 0;
-    left: 5px;
-    border-left: #FFFFFF solid 4px;
-    animation: moveline 10s linear forwards;
-} */
 
 
 .timeline-line {
@@ -315,7 +282,7 @@
 }
 
 .projectCard-container {
-    height: 400px;
+    height: 405px;
     width: 500px;
     background-color: #202145;
     border-radius: 15px;
@@ -324,6 +291,7 @@
     margin-left: 1rem; 
     overflow: hidden;
     justify-content: flex-start;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .carousel-container {
@@ -363,7 +331,7 @@
 }
 
 .project-desc {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: #FFFFFF;
     letter-spacing: 0.5px;
@@ -373,19 +341,12 @@
     margin-top: -7px;
 }
 
-.skills-large-btn3 {
-    padding: 0.2rem 1rem;
-    font-size: 0.65rem;
-    font-weight: 550; 
-    color: #00C6C3; 
-    margin-top: -5px;
-}
 
 
 .form-header {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #FCA311;
+    color: #F3A738;
     letter-spacing: 2px;
     text-align: center;
     margin-top: 2rem;
@@ -425,6 +386,7 @@
 
 .form-send-text{
     font-size: 0.8rem;
+    font-family: 'Source Code Pro', monospace;
     font-weight: 450;
     color: #04052E;
     letter-spacing: 0.5px;
@@ -437,7 +399,7 @@
     display: inline-block;
     font-size: 0.8rem;
     font-weight: 400;
-    background-color: #FCA311;
+    background-color: #F3A738;
     letter-spacing: 0.5px;
     text-align: center;
     margin-top: 1rem;
@@ -466,7 +428,7 @@ pointer-events: none;
 }
 
 .icons1 {
-    color: #FCA311;
+    color: #F3A738;
     font-size: 23px;
     margin-top: 1.3rem;
     margin-right: 1.2rem;
@@ -485,14 +447,18 @@ pointer-events: none;
 .contact-form-container {
     z-index: 10000; 
     position: relative; 
-    right: 16rem;
 }
 
 .globe-container {
-    position: absolute; 
-    width: 80rem;
-    left: 13rem;
-    height: 80rem;
+    width: 40rem;
+    height: 60rem;
     z-index: 9999; 
+    position: relative;
 
 }
+
+.ufo-container {
+    z-index: 10999;
+    width: 120px;
+}
+
