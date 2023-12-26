@@ -420,8 +420,14 @@ pointer-events: none;
 .icons1 {
     color: #F3A738;
     font-size: 23px;
-    margin-top: 15%;
+    margin-top: 17%;
     margin-right: 1rem;
+    z-index: 10000;
+}
+
+.icons1:hover {
+    color: #c2852c;
+    position: relative;
 }
 
 

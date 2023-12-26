@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import '../styles/header.css';
+// import {pdfjs, Document, Page} from 'react-pdf'
+// import Resume from '/images/Resume.pdf'
 
 
 function Header({ onMenuClick }) {
@@ -18,7 +20,7 @@ function Header({ onMenuClick }) {
                     
                             <a className="headerText" data-text="&nbsp;&nbsp;PROJECTS&nbsp;" onClick={() => onMenuClick('projects')}>&nbsp;&nbsp;PROJECTS&nbsp;</a>
                     
-                            <a data-text="&nbsp;&nbsp;RESUME&nbsp;" className="headerText">&nbsp;&nbsp;RESUME&nbsp;</a>
+                            <a href='/images/Resume.pdf' data-text="&nbsp;&nbsp;RESUME&nbsp;" className="headerText">&nbsp;&nbsp;RESUME&nbsp;</a>
                         </div>
                     </div>
                 </div>

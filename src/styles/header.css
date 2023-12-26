@@ -11,6 +11,7 @@
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
     display: inline-block; 
+    margin-right: 1.5rem;
 }
 
 .headerText::after {

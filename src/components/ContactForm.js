@@ -37,7 +37,6 @@ function ContactForm() {
 
     return (
     <section>
-        <aside></aside>
         <form className="for" onSubmit={handleSubmit}>
         <VStack>
             <code className='form-header'> Get in touch! </code>
@@ -55,9 +54,15 @@ function ContactForm() {
                         <input className='form-send-text' type="submit" value="Send" />
                     </div>
                     <div className="icons-container">
-                        <FontAwesomeIcon className="icons1" icon={faLinkedinIn} />
-                        <FontAwesomeIcon className="icons1" icon={faGithub} />
-                        <FontAwesomeIcon className="icons1" icon={faTelegram} />
+                        <a href="https://www.linkedin.com/in/lawgeokling/">
+                            <FontAwesomeIcon className="icons1" icon={faLinkedinIn} />
+                        </a>
+                        <a href="https://github.com/geoklinglaw">
+                            <FontAwesomeIcon className="icons1" icon={faGithub} />
+                        </a>
+                        <a href="t.me/@uhhhhhhhhhhidk">
+                            <FontAwesomeIcon className="icons1" icon={faTelegram} />
+                        </a>
                     </div>
                 </HStack>
             </VStack>
