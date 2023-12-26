@@ -45,10 +45,9 @@ function Home() {
     const nextSectionRef = useRef(null);
  
     useEffect(() => {
-        // Scroll to the next section after the animation duration
         const timer = setTimeout(() => {
           nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-        }, 3500); // Duration should be slightly longer than the animation duration
+        }, 3500); 
     
         return () => clearTimeout(timer);
       }, []);
@@ -178,7 +177,7 @@ function Home() {
                                         transition={{ duration: 0.3, ease: "easeOut" }}
                                         ref={ref}
                                         className="header4 text-left">
-                                        Hello! I'm Geok Ling
+                                        Hello! I&apos;m Geok Ling
                                 </motion.h1>
                                     <motion.p 
                                         animate={inView ? "visible" : "hidden"}

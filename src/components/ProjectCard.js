@@ -129,7 +129,7 @@ function ProjectCard() {
                                         icon={<ExternalLinkIcon />}
                                     />
                                 </Flex>
-                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> This project offers a tailored travel planning experience, creating customized itineraries based on users' preferences with destinations and dining selections. </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> This project offers a tailored travel planning experience, creating customized itineraries based on users&apos; preferences with destinations and dining selections. </p>
                             </VStack>
                         </Box>
                     </motion.div>
