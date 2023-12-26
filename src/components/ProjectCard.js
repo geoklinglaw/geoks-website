@@ -8,6 +8,7 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import { useInView } from 'react-intersection-observer';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { IconButton } from '@chakra-ui/react'
+import { FaLink } from "react-icons/fa";
 import { AdobeFonts } from 'react-adobe-fonts';
 import Image from 'next/image.js';
 
@@ -59,16 +60,15 @@ function ProjectCard() {
             <div className="projectCard-layout" >
                 <VStack>
                     <HStack className="projectCard-horizontal">
-                    <motion.div
-                        ref={ref}
-                        animate={controls}
-                        initial="hidden"
-                        variants={variants}
-                        transition={{ delay: 0.1, duration: 0.4, ease: "linear"}}
-                    >
+                        <motion.div
+                            ref={ref}
+                            animate={controls}
+                            initial="hidden"
+                            variants={variants}
+                            transition={{ delay: 0.1, duration: 0.4, ease: "linear"}}
+                        >
                         <Box className='projectCard-container'>
                             <VStack>
-                                <div className='project-img img'>
                                 <Carousel autoSlide={false}>
                                     {slides1.map((slide) => (
                                         <Image 
@@ -81,20 +81,16 @@ function ProjectCard() {
                                         // <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
+                                <div className='flex flex-row justify-between w-[85%] mt-[1%]'>
+                                    <p className='project-header'>Wellness Network Platform</p>
+                                    <IconButton
+                                        colorScheme='#FFFFFF'
+                                        fontSize='20px'
+                                        justifyContent='flex-end'
+                                        icon={<FaLink />}
+                                    />
                                 </div>
-                                <HStack>
-                                    <Flex>
-                                        <p className='project-header'> Mental Wellness Social Platform </p>
-                                        <IconButton
-                                            colorScheme='#FFFFFF'
-                                            aria-label='Done'
-                                            fontSize='20px'
-                                            icon={<ExternalLinkIcon />}
-                                        />
-                                    </Flex>
-                                </HStack>
-                                
-                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> In collaboration with GrowthCollectiveSG, GrowthHub serves as a social platform designed to nurture mental wellness through events, community engagement, and supportive social groups. </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'>In collaboration with GrowthCollectiveSG, GrowthHub serves as a social platform designed to nurture mental wellness through events, community engagement, and supportive social groups.</p>
                             </VStack>
                         </Box>
                     </motion.div>
@@ -120,16 +116,16 @@ function ProjectCard() {
                                         // <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
-                                <Flex>
-                                    <p className='project-header'> Travel Itinerary Generator </p>
+                                <div className='flex flex-row justify-between w-[85%] mt-[1%]'>
+                                    <p className='project-header'>Travel Itinerary Generator</p>
                                     <IconButton
                                         colorScheme='#FFFFFF'
-                                        aria-label='Done'
                                         fontSize='20px'
-                                        icon={<ExternalLinkIcon />}
+                                        justifyContent='flex-end'
+                                        icon={<FaLink />}
                                     />
-                                </Flex>
-                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> This project offers a tailored travel planning experience, creating customized itineraries based on users&apos; preferences with destinations and dining selections. </p>
+                                </div>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'>This project offers a tailored travel planning experience, creating customized itineraries based on users&apos; preferences with destinations and dining selections.</p>
                             </VStack>
                         </Box>
                     </motion.div>
@@ -156,16 +152,16 @@ function ProjectCard() {
                                         // <img key={slide} src={slide} alt="Project Image" />
                                     ))}
                                 </Carousel>
-                                <Flex>
-                                    <p className='project-header'> Expenditure Tracker Telegram Bot </p>
+                                <div className='flex flex-row justify-between w-[85%] mt-[1%]'>
+                                    <p className='project-header'>Expenditure Tracker Bot</p>
                                     <IconButton
                                         colorScheme='#FFFFFF'
                                         aria-label='Done'
                                         fontSize='20px'
-                                        icon={<ExternalLinkIcon />}
+                                        icon={<FaLink />}
                                     />
-                                </Flex>
-                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'> Telegram bot designed to simplify expense tracking with Google Sheets. It efficiently categorizes expenses, manages one-time and recurring transactions, and allows for easy modification of past entries. </p>
+                                </div>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className='project-desc'>Designed to simplify expense tracking with Google Sheets. It efficiently categorizes expenses, manages one-time and recurring transactions, and allows for easy modification of past entries.</p>
                             </VStack>
                         </Box>
                     </motion.div>

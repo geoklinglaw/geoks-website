@@ -271,9 +271,12 @@ function Home() {
                     </ChakraProvider>
                 </div>
 
+                <div className="pt-[10rem]"/>
+                <div className="pt-[10rem]"/>
 
-                <div className="pt-[30%]">
-                    <motion.div className="container" initial="hidden" animate="show">
+
+                <div className="container">
+                    <motion.div initial="hidden" animate="show">
                     <section className="hero" style={{height:'100vh', position: 'relative'}}>
                         
                         <motion.section
@@ -283,7 +286,7 @@ function Home() {
                             transition={{ duration: 1.5 }}
                         >
                             <SectionWithStars showStars={true} /> 
-                            <HStack align={"center"}>
+                            <div className="contact-container">
                                 <div className="contact-form-container">
                                     <ContactForm/>
                                 </div>
@@ -291,7 +294,8 @@ function Home() {
                                 <div className="globe-container">
                                     <GlobeCanvas/>
                                 </div>
-                            </HStack>
+                            
+                            </div>
                         </motion.section>
                     </section>
                     </motion.div>
