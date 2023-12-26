@@ -58,7 +58,7 @@ function ProjectCard() {
         <HStack>
             <div className="projectCard-layout" >
                 <VStack>
-                    <HStack>
+                    <HStack className="projectCard-horizontal">
                     <motion.div
                         ref={ref}
                         animate={controls}

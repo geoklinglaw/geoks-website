@@ -169,8 +169,8 @@ function Home() {
                 <Header onMenuClick={handleMenuClick} style={{ position: 'absolute', top: 0, width: '100%' }} />
                 <div className="hero flex justify-center ">
                     <ScrollToTop />
-                        <HStack className="space-x-20">
-                            <VStack className="basis-1/2">
+                        <HStack className="about-me">
+                            <VStack className="left-about-container">
                                 <motion.h1
                                         animate={inView ? "visible" : "hidden"}
                                         variants={up}
@@ -186,16 +186,16 @@ function Home() {
                                         ref={ref}
                                         style={{ fontFamily: 'Colfax, sans-serif' }}
                                         className="intro font-ssp mt-5 tracking-[0.2px]"> 
-                                        Majoring in Information Systems from the National <br></br>
-                                        University of Singapore (NUS), I find joy in problem-<br></br>
-                                        solving and designing software products.  I am excited<br></br>
-                                        to learn, grow and hopefully, make a small yet <br></br> meaningful 
+                                        Majoring in Information Systems from the National
+                                        University of Singapore (NUS), I find joy in problem-
+                                        solving and designing software products.  I am excited
+                                        to learn, grow and hopefully, make a small yet meaningful 
                                         impact. <br></br><br></br>
                                         
-                                        Outside of development, I enjoy cooking, taking <br></br> leisure 
-                                        walks and petting random cats on my walks. <br></br> Recently, I 
-                                        embraced the thrills of solo travel with a <br></br> trip across 
-                                        Taiwan, an experience that has sparked <br></br> my newfound 
+                                        Outside of development, I enjoy cooking, taking leisure 
+                                        walks and petting random cats on my walks. Recently, I 
+                                        embraced the thrills of solo travel with a trip across 
+                                        Taiwan, an experience that has sparked my newfound 
                                         love for solo adventures :D
                                     </motion.p>
 
@@ -238,7 +238,7 @@ function Home() {
                                 variants={down}
                                 transition={{ duration: 0.3, ease: "easeOut" }}
                                 ref={ref}
-                                className="basis-1/2 flex profile-img"> 
+                                className="profile-img"> 
                                 <Image
                                     src="/images/profile1.png"
                                     alt="landingpage"
@@ -247,7 +247,6 @@ function Home() {
                                 />
                             </motion.div>
                         </HStack>
-
                 </div>
 
 
@@ -273,7 +272,7 @@ function Home() {
                 </div>
 
 
-                <div>
+                <div className="pt-[30%]">
                     <motion.div className="container" initial="hidden" animate="show">
                     <section className="hero" style={{height:'100vh', position: 'relative'}}>
                         
@@ -302,5 +301,4 @@ function Home() {
     );
 }
 export default Home;
-
 

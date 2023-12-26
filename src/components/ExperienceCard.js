@@ -21,20 +21,20 @@ function ExperienceSection() {
     };
       
     const logoAnimation1 = {
-        hidden: { opacity: 0, y: -20 }, // Start from slightly above and faded out
+        hidden: { opacity: 0, y: -20 }, 
         visible: {
           opacity: 1,
           y: 0,
-          transition: { delay: 0.1, duration: 0.1, ease: "linear" }, // Delay this more than the line
+          transition: { delay: 0.1, duration: 0.1, ease: "linear" }, 
         },
     };
 
     const logoAnimation2 = {
-        hidden: { opacity: 0, y: -5 }, // Start from slightly above and faded out
+        hidden: { opacity: 0, y: -5 }, 
         visible: {
           opacity: 1,
           y: 0,
-          transition: { delay: 0.35, duration: 0.2, ease: "linear" }, // Delay this more than the line
+          transition: { delay: 0.38, duration: 0.2, ease: "linear" },
         },
     };
 

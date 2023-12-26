@@ -10,7 +10,6 @@
 .hero {
     height: 100vh;
     scroll-snap-align: start;
-    /* padding-bottom: 1rem; */
 }
 
 * {
@@ -56,9 +55,7 @@
     50% { border-color: transparent; }
 }
 
-.hero-container {
-    /* padding-top: 20px; */
-}
+
 
 .hero-div {
     display: flex;
@@ -75,40 +72,6 @@
 }
 
 
-.header2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-bottom: 0.3rem;
-    text-align: center;
-    color: azure;
-}
-
-
-
-.header3 {
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-    color: azure;
-    margin-bottom: -2px;
-}
-
-.lets-talk-btn {
-    margin-top: 2rem;
-    padding: 0.5rem 1.3rem;
-    font-size: 0.8rem;
-    font-weight: 550; 
-    color: #04052E;
-    background-image: linear-gradient(30deg, #00BD9D, #00BD9D, #54E0FF); 
-    border: none;
-    border-radius: 3rem; 
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}
-  
-.lets-talk-btn:hover {
-    background-image: linear-gradient(30deg, #02aa8c, #02aa8c, #43b3cc); 
-}
 
 .icons {
     color: azure;
@@ -126,23 +89,43 @@
 }
 
 .header4 {
-    margin-top: 1rem;
+    margin-top: 5%;
     font-size: 1.9rem;
     font-weight: 700;
     color: #F3A738;
     font-family: 'Source Code Pro', monospace;
     letter-spacing: 1px;
 }
+
+.about-me {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
   
-.container-space {
-    padding-top: 5rem;
+.left-about-container {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    /* padding-left: 10%; */
+    /* padding-right: 10%;  */
+    /* margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%; */
+    margin-right: 5%;
+    overflow: hidden;
+    /* justify-content: flex-start; */
+    justify-content: right;
+    width: 30%;
+    height: 70%;
+
 }
 
 
 .intro {
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.5%;
     line-height: 1.4;
     text-align: left;
     color: azure;
@@ -158,8 +141,7 @@
     font-size: 1rem;
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    margin-top: 1.7rem;
-    margin-bottom: 0.2rem;
+    margin-top: 10%;
     padding-right: 30px;
     text-align: left;
     color: #F3A738;
@@ -175,28 +157,20 @@
 
 
 .profile-img {
-    justify-content: right;
-    padding-right: 4.5rem;
+    justify-content: left;
+    height: 70%;
 }
 
 .header5 {
     font-size: 4.8rem;
     font-weight: 700;
     color: #F3A738;
-    /* margin-top: 8rem; */
     font-family: 'Source Code Pro', monospace;
     margin-bottom: 3.25rem;
     letter-spacing: 2px;
     text-align: center;
 }
 
-.line {
-    width: 50%;
-    border: #F3A738 solid 2px;
-    background-color: #F3A738;
-    margin-bottom: 2rem;
-    margin-left: 20px;
-}
 
 .role {
     font-size: 1.5rem;
@@ -212,7 +186,7 @@
     font-size: 0.9rem;
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
-    margin-bottom: -5px;
+    margin-bottom: -1%;
     line-height: 1.4;
     text-align: left;
     color: #F3A738;
@@ -223,14 +197,14 @@
     font-weight: 600;
     text-align: left;
     color: azure;
-    margin-top: -6px;
+    margin-top: -0.5%;
     font-family: 'Source Code Pro', monospace;
 }
 
 .job-description {
     font-size: 0.9rem;
     font-weight: 400;
-    margin-bottom: 0.15rem;
+    margin-bottom: 1%;
     line-height: 1.4;
     text-align: left;
     color: azure;
@@ -239,37 +213,27 @@
 .job-container {
     width: 82%;
     align-items: flex-start;
-    margin: 0 auto auto auto;
-    padding: 0 100px 0 130px;
+    padding: 0 10% 0 11%;
     position: absolute;
-    top: 10px;
+    top: 5%;
     
-}
-
-
-
-.job-container2 {
-    margin-top: 20rem;
 }
 
 
 .timeline-line {
     position: absolute;
     left: calc(16% - 3px);
-    top: 50px; /* Start after the logo's height */
-
+    top: 5%; 
     bottom: 0;
-    width: 4px; /* Line thickness */
-    background-color: #FFFFFF; /* Line color */
-    transform-origin: top; /* Ensures scaling happens top-down */
+    width: 4px; 
+    background-color: #FFFFFF; 
+    transform-origin: top; 
 }
   
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 75%;
     margin: 0 auto;
-    padding: 4rem;
-    
 }
 
 .logo {
@@ -278,6 +242,14 @@
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: 10;
+}
+
+.line {
+    width: 50%;
+    border: #F3A738 solid 2px;
+    background-color: #F3A738;
+    margin-bottom: 2.5%;
+    margin-left: 2%;
 }
 
 .projectCard-container {
@@ -291,6 +263,18 @@
     overflow: hidden;
     justify-content: flex-start;
     font-family: 'Source Code Pro', monospace;
+}
+
+.projectCard-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+    .projectCard-horizontal {
+        flex-direction: column !important;
+
+    }
 }
 
 .carousel-container {
@@ -460,4 +444,3 @@ pointer-events: none;
     z-index: 10999;
     width: 120px;
 }
-

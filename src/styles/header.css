@@ -3,9 +3,8 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-top: 20px;
-    margin-left: 2.5rem;
-    letter-spacing: 3px;
+    margin-top: 10%;
+    letter-spacing: 2px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -39,11 +38,7 @@
 
 .nav-container {
     display: flex;
-    justify-content: flex-end; /* Aligns children (navbar) to the right */
-}
-
-.navbar {
-    display: flex;
+    justify-content: flex-end;
 }
 
 ul li {

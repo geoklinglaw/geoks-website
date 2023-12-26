@@ -8,23 +8,18 @@ function Header({ onMenuClick }) {
 
     return (
         <header>
-            <nav className="px-4 lg:px-6">
+            <nav className="lg:px-6">
                 <div className="flex justify-end mx-auto max-w-screen-xl lg:mt-4">
-                    <div className="hidden items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                        <ul className="navbar">
-                            <li>
-                                <a className="headerText" data-text="&nbsp;&nbsp;ABOUT&nbsp;" onClick={() => onMenuClick('about')}>&nbsp;&nbsp;ABOUT&nbsp;</a>
-                            </li>
-                            <li>
-                                <a className="headerText" data-text="&nbsp;&nbsp;EXPERIENCE&nbsp;" onClick={() => onMenuClick('experience')}>&nbsp;&nbsp;EXPERIENCE&nbsp;</a>
-                            </li>
-                            <li>
-                                <a className="headerText" data-text="&nbsp;&nbsp;PROJECTS&nbsp;" onClick={() => onMenuClick('projects')}>&nbsp;&nbsp;PROJECTS&nbsp;</a>
-                            </li>
-                            <li>
-                                <a data-text="&nbsp;&nbsp;RESUME&nbsp;" className="headerText">&nbsp;&nbsp;RESUME&nbsp;</a>
-                            </li>
-                        </ul>
+                    <div className="flex items-center w-full lg:flex lg:w-auto ">
+                        <div className="flex flex-row">
+                            <a className="headerText" data-text="&nbsp;&nbsp;ABOUT&nbsp;" onClick={() => onMenuClick('about')}>&nbsp;&nbsp;ABOUT&nbsp;</a>
+                
+                            <a className="headerText" data-text="&nbsp;&nbsp;EXPERIENCE&nbsp;" onClick={() => onMenuClick('experience')}>&nbsp;&nbsp;EXPERIENCE&nbsp;</a>
+                    
+                            <a className="headerText" data-text="&nbsp;&nbsp;PROJECTS&nbsp;" onClick={() => onMenuClick('projects')}>&nbsp;&nbsp;PROJECTS&nbsp;</a>
+                    
+                            <a data-text="&nbsp;&nbsp;RESUME&nbsp;" className="headerText">&nbsp;&nbsp;RESUME&nbsp;</a>
+                        </div>
                     </div>
                 </div>
             </nav>
