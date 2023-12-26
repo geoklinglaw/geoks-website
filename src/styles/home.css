@@ -6,12 +6,11 @@
 .container {
     scroll-snap-type: y proximity;
     height: 100vh;
-    /* overflow-y: scroll; */
 }
 .hero {
     height: 100vh;
     scroll-snap-align: start;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 * {
@@ -58,7 +57,7 @@
 }
 
 .hero-container {
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .hero-div {
