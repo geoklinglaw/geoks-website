@@ -54,6 +54,7 @@ function GlobeCanvas() {
                         enablePan={true} 
                         enableZoom={false}
                         enableRotate={true}
+                        autoRotate={true}
                     />
                 </Suspense>
             </Canvas>

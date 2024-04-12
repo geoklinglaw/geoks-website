@@ -60,7 +60,7 @@ function ContactForm() {
                         <a href="https://github.com/geoklinglaw">
                             <FontAwesomeIcon className="icons1" icon={faGithub} />
                         </a>
-                        <a href="https://t.me/@uhhhhhhhhhhidk">
+                        <a href="https://web.telegram.org/k/#@zaigeiwo2minutes">
                             <FontAwesomeIcon className="icons1" icon={faTelegram} />
                         </a>
                     </div>

@@ -93,7 +93,7 @@ function ExperienceSection() {
                                     <p className="role">Software Engineer Intern</p>
                                     <p style={{ fontFamily: 'Colfax, sans-serif' }} className="company">@Autodesk</p>
                                 </HStack>
-                                <p className="date">Jan 2024 - June 2024</p>
+                                <p className="date text-[15px] mb-2">Jan 2024 - June 2024</p>
                             </VStack>
                         </motion.div>
                         </HStack>
@@ -121,16 +121,16 @@ function ExperienceSection() {
                                 <VStack align="start" style={{alignItems:'flex-start'}}>
                                     <HStack>
                                         <p className="role" size='md'>Software Developer Intern</p>
-                                        <p className="company" >@Home Team (HTX)</p>
+                                        <p className="company">@Home Team (HTX)</p>
                                     </HStack>
-                                    <p className="date">May 2023 - Aug 2023</p>
+                                    <p className="date text-[15px] mb-2">May 2023 - Aug 2023</p>
 
-                                    <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description">
+                                    <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description text-[15px]">
                                         Improved web scraping system using Python (Selenium, BeautifulSoup), ensuring
                                         reliable and consistent data extraction from social media platforms like Instagram,
                                         Facebook, TikTok, and Twitter.
                                     </p>
-                                    <p className="job-description">
+                                    <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description text-[15px]">
                                         Deployed intuitive navigation features; converted raw data into visually engaging
                                         insights delivered through a Telegram bot for real-time monitoring and analysis.
                                     </p>
