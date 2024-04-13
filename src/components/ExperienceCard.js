@@ -91,7 +91,7 @@ function ExperienceSection() {
                             <VStack align="start" style={{alignItems:'flex-start'}}>
                                 <HStack>
                                     <p className="role">Software Engineer Intern</p>
-                                    <p style={{ fontFamily: 'Colfax, sans-serif' }} className="company">@Autodesk</p>
+                                    <code className="company">@Autodesk</code>
                                 </HStack>
                                 <p className="date text-[15px] mb-2">Jan 2024 - June 2024</p>
                             </VStack>
