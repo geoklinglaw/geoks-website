@@ -11,8 +11,13 @@
     gap: 30px;
 }
 .hero {
-    height: 100vh;
+    height: 110vh;
     scroll-snap-align: start;
+}
+
+.extendedhero {
+    height: 150vh;
+    scroll-snap-align: start; 
 }
 
 * {

@@ -76,6 +76,96 @@ function ProjectCard() {
       <HStack>
         <div className="projectCard-layout">
           <VStack>
+          <HStack className="projectCard-horizontal">
+              <motion.div
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                variants={variants}
+                transition={{ delay: 0.1, duration: 0.4, ease: "linear" }}
+              >
+                <Box className="projectCard-container">
+                  <VStack>
+                    <Carousel autoSlide={false}>
+                      {slides1.map((slide) => (
+                        <Image
+                          key={slide}
+                          src={slide}
+                          alt="Project Image"
+                          width={1700}
+                          height={1000}
+                        />
+                        // <img key={slide} src={slide} alt="Project Image" />
+                      ))}
+                    </Carousel>
+                    <div className="flex flex-row justify-between w-[85%] mt-[1%]">
+                      <p className="project-header">
+                        The Giving Cook
+                      </p>
+                      <IconButton
+                        colorScheme="#FFFFFF"
+                        fontSize="20px"
+                        justifyContent="flex-end"
+                        icon={<FaLink />}
+                      />
+                    </div>
+                    <p
+                      style={{ fontFamily: "Colfax, sans-serif" }}
+                      className="project-desc"
+                    >
+                      This platform is developed to connect food vendors to 
+                      NGOs and individuals for excess food distribution for 
+                      FoodBank, based on matching algorithm with QR code verification.
+                    </p>
+                  </VStack>
+                </Box>
+              </motion.div>
+
+              <motion.div
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                variants={variants}
+                transition={{ delay: 0.1, duration: 0.4, ease: "linear" }}
+              >
+                <Box className="projectCard-container">
+                  <VStack>
+                    <Carousel autoSlide={false}>
+                      {slides2.map((slide) => (
+                        <Image
+                          key={slide}
+                          src={slide}
+                          alt="Project Image"
+                          width={1700}
+                          height={1000}
+                        />
+                        // <img key={slide} src={slide} alt="Project Image" />
+                      ))}
+                    </Carousel>
+                    <div className="flex flex-row justify-between w-[85%] mt-[1%]">
+                      <p className="project-header">
+                        BorrowBuddies
+                      </p>
+                      <IconButton
+                        colorScheme="#FFFFFF"
+                        fontSize="20px"
+                        justifyContent="flex-end"
+                        icon={<FaLink />}
+                      />
+                    </div>
+                    <p
+                      style={{ fontFamily: "Colfax, sans-serif" }}
+                      className="project-desc"
+                    >
+                      BorrowBuddies is a peer-to-peer item sharing platform 
+                      that fosters a sharing economy where users can lend 
+                      and borrow items for a period of time, with deposit 
+                      feature that ensures 
+                    </p>
+                  </VStack>
+                </Box>
+              </motion.div>
+            </HStack>
             <HStack className="projectCard-horizontal">
               <motion.div
                 ref={ref}

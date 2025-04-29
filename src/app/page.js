@@ -199,13 +199,12 @@ function Home() {
               >
                 Majoring in Information Systems from the National University of
                 Singapore (NUS), I find joy in problem- solving and designing
-                software products. I am excited to learn, grow and hopefully,
-                make a small yet meaningful impact. <br></br>
+                software products that makes my life easier. I am excited to explore, grow,
+                and make an impact with tech :D <br></br>
                 <br></br>
-                Outside of development, I enjoy cooking, taking leisure walks
-                and petting random cats on my walks. Recently, I embraced the
-                thrills of solo travel with a trip across Taiwan, an experience
-                that has sparked my newfound love for solo adventures :D
+                Outside of development, I enjoy cooking, night walks
+                and petting random cats on my walks. I'm open to new experiences! 
+                Food, activities, knowledge, anything really
               </motion.p>
 
               <motion.div
@@ -335,7 +334,7 @@ function Home() {
           </HStack>
         </div>
 
-        <div className="hero">
+        <div className="extendedhero">
           <h1 ref={experience} className="header5">
             Experience.
           </h1>
@@ -344,7 +343,7 @@ function Home() {
           </ChakraProvider>
         </div>
 
-        <div className="hero">
+        <div className="extendedhero">
           <ScrollToTop />
           <HStack justify={"center"}>
             <h1 ref={projects} className="header5">

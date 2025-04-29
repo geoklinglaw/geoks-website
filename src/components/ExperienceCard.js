@@ -70,7 +70,34 @@ function ExperienceSection() {
             <div className="animated-border">
             
                 <VStack spacing={20} align="start">
-                    
+                <Flex className="job-container-2" direction="row" justify="center" align="center">
+                        <HStack spacing={10} align="start">
+                        <motion.img 
+                            className="logo" 
+                            src={'/images/autodesk.png'}
+                            variants={logoAnimation1}
+                            initial="hidden"
+                            whileInView="visible"
+                            animate={inView ? "visible" : "hidden"}
+                            // viewport={{ once: true, amount: 0.8 }} 
+                        />
+                        <motion.div
+                            variants={textAnimation1}
+                            initial="hidden"
+                            whileInView="visible"
+                            // viewport={{ once: true, amount: 0.8 }} 
+                        >
+                            <VStack align="start" style={{alignItems:'flex-start'}}>
+                                <HStack>
+                                    <p className="role">Incoming Software Engineer Intern</p>
+                                    <code className="company">@ Stripe</code>
+                                </HStack>
+                                <p className="date text-[15px] mb-2">May 2025 - Aug 2025</p>
+                            </VStack>
+                        </motion.div>
+                        </HStack>
+                    </Flex>
+
                     <Flex className="job-container-2" direction="row" justify="center" align="center">
                         <HStack spacing={10} align="start">
                         <motion.img 
@@ -91,9 +118,20 @@ function ExperienceSection() {
                             <VStack align="start" style={{alignItems:'flex-start'}}>
                                 <HStack>
                                     <p className="role">Software Engineer Intern</p>
-                                    <code className="company">@Autodesk</code>
+                                    <code className="company">@ Autodesk</code>
                                 </HStack>
                                 <p className="date text-[15px] mb-2">Jan 2024 - June 2024</p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description text-[15px]">
+                                    Spearheaded the licensing data pipelines using Apache Airflow and Spark, processing thousands 
+                                    of entries and boosting data processing efficiency for multiple projects by over 40%.
+                                </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description text-[15px]">
+                                    Developed a robust data instrumentation strategy using Go and OpenTelemetry to enhance data 
+                                    quality and consistency 
+                                </p>
+                                <p style={{ fontFamily: 'Colfax, sans-serif' }} className="job-description text-[15px]">
+                                    Clinched Best use of AL/ML award for APAC Licensing Hackathon.
+                                </p>
                             </VStack>
                         </motion.div>
                         </HStack>
@@ -121,7 +159,7 @@ function ExperienceSection() {
                                 <VStack align="start" style={{alignItems:'flex-start'}}>
                                     <HStack>
                                         <p className="role" size='md'>Software Developer Intern</p>
-                                        <p className="company">@Home Team (HTX)</p>
+                                        <p className="company">@ Home Team (HTX)</p>
                                     </HStack>
                                     <p className="date text-[15px] mb-2">May 2023 - Aug 2023</p>
 
