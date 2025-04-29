@@ -222,82 +222,21 @@ function Home() {
                         style={{ fontFamily: "Colfax, sans-serif" }}
                         className="skills-list"
                       >
-                        Java
+                        Fullstack Development, 
                       </p>
                       <p
                         style={{ fontFamily: "Colfax, sans-serif" }}
                         className="skills-list"
                       >
-                        Python
+                        Data Engineering,
                       </p>
                       <p
                         style={{ fontFamily: "Colfax, sans-serif" }}
                         className="skills-list"
                       >
-                        ReactJS
+                        Web Scraping
                       </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Javascript
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        SQL
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Typescript
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Kotlin
-                      </p>
-                    </HStack>
-                    <HStack>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Firebase
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        NodeJS
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Git
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        TailwindCSS
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Figma
-                      </p>
-                      <p
-                        style={{ fontFamily: "Colfax, sans-serif" }}
-                        className="skills-list"
-                      >
-                        Illustrator
-                      </p>
+
                     </HStack>
                     <HStack>
                       <a href="/images/Portfolio.pdf">

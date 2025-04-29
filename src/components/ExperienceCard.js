@@ -74,7 +74,7 @@ function ExperienceSection() {
                         <HStack spacing={10} align="start">
                         <motion.img 
                             className="logo" 
-                            src={'/images/autodesk.png'}
+                            src={'/images/stripe.png'}
                             variants={logoAnimation1}
                             initial="hidden"
                             whileInView="visible"
