@@ -203,7 +203,7 @@ function Home() {
                 and make an impact with tech :D <br></br>
                 <br></br>
                 Outside of development, I enjoy cooking, night walks
-                and petting random cats on my walks. I'm open to new experiences! 
+                and petting random cats on my walks. I&apos;m open to new experiences! 
                 Food, activities, knowledge, anything really
               </motion.p>
 
